@@ -1,0 +1,59 @@
+.landing {
+  .landing-wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    .image {
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: absolute;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+
+      .logo {
+        font-size: 25px;
+      }
+
+      ul {
+        list-style-type: none;
+        display: flex;
+
+        li {
+          font-size: 20px;
+          padding: 0 16px;
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+
+    .landing-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .landing-text-transparent {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      top: 100px;
+      left: 0;
+      background: rgba(0, 0, 0, 0.5);
+      min-height: 100px;
+    }
+  }
+}

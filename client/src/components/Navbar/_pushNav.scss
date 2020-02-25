@@ -1,0 +1,30 @@
+.push-nav-wrapper {
+  display: flex;
+  .push-nav {
+    height: 100vh;
+    width: 0;
+    background: lightgrey;
+    position: relative;
+    overflow: hidden;
+    transition: 5s;
+
+    &.open {
+      width: 30vw;
+    }
+    .close-btn {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+    .list-item {
+      display: block;
+      font-size: 25px;
+      padding: 15px 15px;
+    }
+  }
+  .content {
+    height: 100vh;
+    width: 100vw;
+    background: lime;
+  }
+}

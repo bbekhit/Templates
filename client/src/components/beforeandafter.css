@@ -1,0 +1,37 @@
+/* https://codepen.io/kevinpowell/pen/rJYVPM */
+/* https://codepen.io/kevinpowell/pen/ZrMzre/ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p::before {
+  content: url();
+  content: open-quote;
+  content: attr(data-tool-tip);
+}
+a[data-tool-tip]:hover::after {
+  transform: scale(1);
+}
+
+.section-with-deco::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0e7";
+  display: block;
+  margin-bottom: 5px;
+}
+
+a[href$=".pdf"]::after {
+  font-family: "Font Awesome 5 Free";
+  content: " \f1c1";
+}
+
+a[href^="http"]::after {
+  font-family: "Font Awesome 5 Free";
+  content: " \f35d";
+  font-weight: 900;
+  font-size: 0.8em;
+}

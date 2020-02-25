@@ -1,0 +1,32 @@
+.wrapper {
+  margin: 100px auto;
+  width: 50vw;
+  .accordion {
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+
+      &:hover {
+        background-color: #ccc;
+      }
+    }
+    .body {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 5s ease;
+      &.open {
+        max-height: 300px;
+        transition: 5s;
+      }
+    }
+  }
+}
