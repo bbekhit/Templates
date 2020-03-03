@@ -26,6 +26,7 @@ import Bootstrap from "./components/Bootstrap/Bootstrap";
 import Natour from "./components/NatoursCss/Natour";
 import Rolling from "./components/Rolling/Rolling";
 import Grid from "./components/Grid/Grid";
+import SlidingCheck from "./components/SlidingCheck/SlidingCheck";
 
 const Main = withRouter(({ location }) => {
   return (
@@ -54,6 +55,7 @@ const Main = withRouter(({ location }) => {
           <Route exact path="/natour" component={Natour} />
           <Route exact path="/rolling" component={Rolling} />
           <Route exact path="/grid" component={Grid} />
+          <Route exact path="/slidingcheck" component={SlidingCheck} />
         </Switch>
       </div>
     </Provider>
